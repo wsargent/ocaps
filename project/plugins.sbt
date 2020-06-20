@@ -5,7 +5,7 @@ addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.8")
 addSbtPlugin("org.foundweekends" % "sbt-bintray" % "0.5.4")
 
 // slides
-addSbtPlugin("org.tpolecat" % "tut-plugin" % "0.6.4")
+addSbtPlugin("org.tpolecat" % "tut-plugin" % "0.6.13")
 
 // documentation
 // I am futzing with diagrams, so if you want to build something then uncomment the

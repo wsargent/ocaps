@@ -1,13 +1,12 @@
 language: scala
 
 scala:
-- 2.12.6
 - 2.11.12
-- 2.13.0-M4
+- 2.12.11
+- 2.13.2
 
 jdk:
 - oraclejdk8
-- oraclejdk9
 
 cache:
   directories:

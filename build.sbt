@@ -6,8 +6,8 @@ val tutPath = settingKey[String]("Path to tut files")
 val stableVersion = settingKey[String]("The version of ocaps that we want the user to download.")
 stableVersion := "0.2.0"
 
-val catsVersion = "1.1.0"
-val catsEffectVersion = "1.0.0-RC2"
+val catsVersion = "2.1.1"
+val catsEffectVersion = "2.1.3"
 
 lazy val root = (project in file("."))
   .enablePlugins(ParadoxPlugin) // https://developer.lightbend.com/docs/paradox/current/index.html
@@ -61,10 +61,10 @@ lazy val root = (project in file("."))
 
     ParadoxMaterialThemePlugin.paradoxMaterialThemeSettings(Paradox),
 
-    libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.25" % Test,
+    libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.30" % Test,
     // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
     libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3" % Test,
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % Test,
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.2" % Test,
     libraryDependencies += "org.typelevel" %% "cats-core" % catsVersion % "tut, test",
 
     git.remoteRepo := "git@github.com:wsargent/ocaps.git",
